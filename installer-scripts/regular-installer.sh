@@ -17,15 +17,15 @@ echo "Modifying configurations"
 
 sleep 1
 
-sudo rm -f /etc/nix/nix.conf ; sudo wget -P /etc/nix https://raw.githubusercontent.com/dnkmmr69420/nix-installer-scripts/main/other-files/nix.conf
-sudo rm -f /etc/profile.d/nix-app-icons.sh ; sudo wget -P /etc/profile.d https://raw.githubusercontent.com/dnkmmr69420/nix-installer-scripts/main/other-files/nix-app-icons.sh
-curl -s https://raw.githubusercontent.com/dnkmmr69420/nix-installer-scripts/main/other-scripts/nix-sudo-path.sh | bash
+sudo rm -f /etc/nix/nix.conf ; sudo wget -P /etc/nix https://raw.githubusercontent.com/percygt/nix-installer-scripts/main/other-files/nix.conf
+sudo rm -f /etc/profile.d/nix-app-icons.sh ; sudo wget -P /etc/profile.d https://raw.githubusercontent.com/percygt/nix-installer-scripts/main/other-files/nix-app-icons.sh
+curl -s https://raw.githubusercontent.com/percygt/nix-installer-scripts/main/other-scripts/nix-sudo-path.sh | bash
 
 echo "Building nix..."
 
 sleep 1
 
-curl -s https://raw.githubusercontent.com/dnkmmr69420/nix-installer-scripts/main/nix-out-of-default/setup.sh | bash -s /usr
+curl -s https://raw.githubusercontent.com/percygt/nix-installer-scripts/main/nix-out-of-default/setup.sh | bash -s /usr
 
 if [ ! -f "/etc/ssl/certs/ca-bundle.crt" ] 
 then
@@ -50,6 +50,6 @@ sudo ln -s /nix/var/nix/profiles/default /var/nix-profile
 
 echo "Creating a backup of nix"
 sleep 1
-bash <(curl -s https://raw.githubusercontent.com/dnkmmr69420/nix-installer-scripts/main/backup-scripts/create-backup.sh)
+bash <(curl -s https://raw.githubusercontent.com/percygt/nix-installer-scripts/main/backup-scripts/create-backup.sh)
 
 echo "Finished installation"

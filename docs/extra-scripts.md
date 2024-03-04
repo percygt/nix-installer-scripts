@@ -11,7 +11,7 @@ My scripts already run these commands automaticly but if you use a different ins
 WARNING: THIS OVERWRITES THE CONFIG SO ANYTHING THAT IS ADDED TO IT IS LOST
 
 ```bash
-sudo rm -f /etc/nix/nix.conf ; sudo wget -P /etc/nix https://raw.githubusercontent.com/dnkmmr69420/nix-installer-scripts/main/other-files/nix.conf
+sudo rm -f /etc/nix/nix.conf ; sudo wget -P /etc/nix https://raw.githubusercontent.com/percygt/nix-installer-scripts/main/other-files/nix.conf
 ```
 
 #### Singeluser
@@ -27,7 +27,7 @@ It makes `/etc/profile.d/nix-app-icons.sh` which contains `XDG_DATA_DIRS="$HOME/
 #### Multiuser
 
 ```bash
-sudo rm -f /etc/profile.d/nix-app-icons.sh ; sudo wget -P /etc/profile.d https://raw.githubusercontent.com/dnkmmr69420/nix-installer-scripts/main/other-files/nix-app-icons.sh
+sudo rm -f /etc/profile.d/nix-app-icons.sh ; sudo wget -P /etc/profile.d https://raw.githubusercontent.com/percygt/nix-installer-scripts/main/other-files/nix-app-icons.sh
 ```
 
 #### Singleuser
@@ -43,5 +43,5 @@ XDG_DATA_DIRS="$HOME/.nix-profile/share:/nix/var/nix/profiles/default/share:$XDG
 This adds all the nix commands like nix, nix-shell, nix-env, to `/usr/local/bin`
 
 ```bash
-bash <(curl -s https://raw.githubusercontent.com/dnkmmr69420/nix-installer-scripts/main/other-scripts/nix-linker.sh)
+bash <(curl -s https://raw.githubusercontent.com/percygt/nix-installer-scripts/main/other-scripts/nix-linker.sh)
 ```

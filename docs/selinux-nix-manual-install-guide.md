@@ -1,6 +1,6 @@
 # Manual Steps
 
-[back to the main readme](https://github.com/dnkmmr69420/nix-with-selinux)
+[back to the main readme](https://github.com/percygt/nix-with-selinux)
 
 ## Step 1 SELinux
 
@@ -241,7 +241,7 @@ systemctl reboot
 ### Install nix backup before using nix at all
 
 ```bash
-bash <(curl -s https://raw.githubusercontent.com/dnkmmr69420/nix-with-selinux/main/create-backup.sh)
+bash <(curl -s https://raw.githubusercontent.com/percygt/nix-with-selinux/main/create-backup.sh)
 ```
 
 ### modify nix-daemon to add units to bind nix.mount
@@ -271,7 +271,7 @@ now you can use the `nix profile` command and I think it is better than `nix-env
 
 ### nix graphical icons
 
-It has its own [guide](https://github.com/dnkmmr69420/nix-graphical-app-icon-guide)
+It has its own [guide](https://github.com/percygt/nix-graphical-app-icon-guide)
 
 #### Single User
 

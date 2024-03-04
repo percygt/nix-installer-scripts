@@ -1,5 +1,5 @@
 ```bash
-bash <(curl -s https://raw.githubusercontent.com/dnkmmr69420/nix-installer-scripts/main/nix-distrobox/distrobox-no-mount-nix.sh)
+bash <(curl -s https://raw.githubusercontent.com/percygt/nix-installer-scripts/main/nix-distrobox/distrobox-no-mount-nix.sh)
 ```
 
 ```bash

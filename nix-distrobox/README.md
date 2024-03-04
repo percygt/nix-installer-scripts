@@ -29,7 +29,7 @@ distrobox enter nix-container
 Run this script to install nix. Make sure you are in the container.
 
 ```bash
-bash <(curl -s https://raw.githubusercontent.com/dnkmmr69420/nix-installer-scripts/main/nix-distrobox/nix-distrobox-installer.sh)
+bash <(curl -s https://raw.githubusercontent.com/percygt/nix-installer-scripts/main/nix-distrobox/nix-distrobox-installer.sh)
 ```
 
 ### Optional Step: Link external commands to distrobox-host-exec
@@ -37,5 +37,5 @@ bash <(curl -s https://raw.githubusercontent.com/dnkmmr69420/nix-installer-scrip
 Link external commands so neofetch can detect system installed packages and you will be able to use distrobox, podman, or docker inside the container running those commands on the host system. RUN THIS INSIDE DISTROBOX
 
 ```bash
-bash <(curl -s https://raw.githubusercontent.com/dnkmmr69420/nix-installer-scripts/main/nix-distrobox/add-external-commands.sh)
+bash <(curl -s https://raw.githubusercontent.com/percygt/nix-installer-scripts/main/nix-distrobox/add-external-commands.sh)
 ```

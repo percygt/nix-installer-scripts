@@ -23,14 +23,14 @@ The fallback nix is there in case if something happens to the regular nix. It sh
 This performs the normal stuff and linking
 
 ```bash
-curl -s https://raw.githubusercontent.com/dnkmmr69420/nix-installer-scripts/main/nix-out-of-default/setup.sh | bash -s /usr/local
+curl -s https://raw.githubusercontent.com/percygt/nix-installer-scripts/main/nix-out-of-default/setup.sh | bash -s /usr/local
 ```
 ### Link
 
 This only does linking
 
 ```bash
-curl -s https://raw.githubusercontent.com/dnkmmr69420/nix-installer-scripts/main/nix-out-of-default/build-scripts/nix-link.sh | bash -s /usr/local
+curl -s https://raw.githubusercontent.com/percygt/nix-installer-scripts/main/nix-out-of-default/build-scripts/nix-link.sh | bash -s /usr/local
 ```
 
 ### Script with no link
@@ -38,13 +38,13 @@ curl -s https://raw.githubusercontent.com/dnkmmr69420/nix-installer-scripts/main
 This one does the normal stuff without linking
 
 ```bash
-curl -s https://raw.githubusercontent.com/dnkmmr69420/nix-installer-scripts/main/nix-out-of-default/setup-nolink.sh | bash
+curl -s https://raw.githubusercontent.com/percygt/nix-installer-scripts/main/nix-out-of-default/setup-nolink.sh | bash
 ```
 
 ### Reinstall nix utils
 
 ```bash
-curl -s https://raw.githubusercontent.com/dnkmmr69420/nix-installer-scripts/main/nix-out-of-default/build-scripts/nix-utils-install.sh | bash
+curl -s https://raw.githubusercontent.com/percygt/nix-installer-scripts/main/nix-out-of-default/build-scripts/nix-utils-install.sh | bash
 ```
 
 ## Extra commands

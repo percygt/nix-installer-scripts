@@ -15,5 +15,5 @@ if [[ -f /etc/nix-setup/install-config.conf ]]
 then
   source /etc/nix-setup/install-config.conf
 else
-  curl -s https://raw.githubusercontent.com/dnkmmr69420/nix-installer-scripts/main/installer-scripts/regular-installer.sh | bash
+  curl -s https://raw.githubusercontent.com/percygt/nix-installer-scripts/main/installer-scripts/regular-installer.sh | bash
 fi

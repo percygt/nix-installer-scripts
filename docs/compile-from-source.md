@@ -3,7 +3,7 @@ This is the modified version of this [page](https://nixos.org/manual/nix/unstabl
 # Install from the archive (x86_64 only)
 
 ```bash
-curl -s https://raw.githubusercontent.com/dnkmmr69420/nix-installer-scripts/main/tar-extracters/compiled-nix-x86_64-tar-extract.sh | bash
+curl -s https://raw.githubusercontent.com/percygt/nix-installer-scripts/main/tar-extracters/compiled-nix-x86_64-tar-extract.sh | bash
 ```
 
 After this, go straight to [After Setup](#After-The-Setup)
@@ -83,7 +83,7 @@ exit
 ### Run this script to copy needed dependencies that the compiler didn't compile
 
 ```bash
-curl -s https://raw.githubusercontent.com/dnkmmr69420/nix-installer-scripts/main/compile-scripts/end-of-compile-setup.sh | bash -s 1.79.0
+curl -s https://raw.githubusercontent.com/percygt/nix-installer-scripts/main/compile-scripts/end-of-compile-setup.sh | bash -s 1.79.0
 ```
 
 # After the setup
@@ -91,7 +91,7 @@ curl -s https://raw.githubusercontent.com/dnkmmr69420/nix-installer-scripts/main
 ### Run the after setup
 
 ```bash
-curl -s https://raw.githubusercontent.com/dnkmmr69420/nix-installer-scripts/main/other-scripts/nix-compile-after-setup.sh | bash -s /usr/local
+curl -s https://raw.githubusercontent.com/percygt/nix-installer-scripts/main/other-scripts/nix-compile-after-setup.sh | bash -s /usr/local
 ```
 
 ## Archive it

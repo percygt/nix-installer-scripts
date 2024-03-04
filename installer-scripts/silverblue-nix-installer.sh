@@ -86,16 +86,16 @@ echo "Setting SELinux back to enforcing"
 
 sudo setenforce Enforcing
 
-bash <(curl -s https://raw.githubusercontent.com/dnkmmr69420/nix-installer-scripts/main/other-scripts/nix-sudo-path.sh)
+bash <(curl -s https://raw.githubusercontent.com/percygt/nix-installer-scripts/main/other-scripts/nix-sudo-path.sh)
 
 echo "Modifying configurations"
 
-sudo wget -O /etc/nix/nix.conf https://raw.githubusercontent.com/dnkmmr69420/nix-installer-scripts/main/other-files/nix.conf
-sudo wget -O /etc/profile.d/nix-app-icons.sh https://raw.githubusercontent.com/dnkmmr69420/nix-installer-scripts/main/other-files/nix-app-icons.sh
+sudo wget -O /etc/nix/nix.conf https://raw.githubusercontent.com/percygt/nix-installer-scripts/main/other-files/nix.conf
+sudo wget -O /etc/profile.d/nix-app-icons.sh https://raw.githubusercontent.com/percygt/nix-installer-scripts/main/other-files/nix-app-icons.sh
 
 echo "Building Nix package manager"
 
-curl -s https://raw.githubusercontent.com/dnkmmr69420/nix-installer-scripts/main/nix-out-of-default/setup.sh | bash -s /usr/local
+curl -s https://raw.githubusercontent.com/percygt/nix-installer-scripts/main/nix-out-of-default/setup.sh | bash -s /usr/local
 
 echo "Cleaning up"
 sudo nix profile remove 0
@@ -105,7 +105,7 @@ sudo ln -s /nix/var/nix/profiles/default /nix/nix-profile
 sudo ln -s /nix/var/nix/profiles/default /var/nix-profile
 
 echo "Making a Nix backup"
-bash <(curl -s https://raw.githubusercontent.com/dnkmmr69420/nix-installer-scripts/main/backup-scripts/create-backup-selinux.sh)
+bash <(curl -s https://raw.githubusercontent.com/percygt/nix-installer-scripts/main/backup-scripts/create-backup-selinux.sh)
 
 echo "Reboot your system by typing"
 echo "systemctl reboot"
